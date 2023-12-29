@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('necta-results',  [App\Http\Controllers\NectaResultsQueryController::class, 'index']);
-Route::get('nida-names',  [App\Http\Controllers\NectaResultsQueryController::class, 'nida']);
+Route::get('nida-names',  [App\Http\Controllers\NidaVerificationController::class, 'nida']);
 
 Route::get('necta-api-key',  [App\Http\Controllers\NectaResultsQueryController::class, 'get_exam_results_test']);
